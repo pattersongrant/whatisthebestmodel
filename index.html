@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>whatisthebestmodel</title>
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      p {
+        margin: 0.5rem 1rem;
+      }
+
+      #model-name {
+        font-size: clamp(3rem, 12vw, 8rem);
+        font-weight: 700;
+      }
+
+      #company-name {
+        font-size: 1.5rem;
+      }
+    </style>
   </head>
   <body>
     <p>
@@ -12,10 +37,9 @@
     </p>
 
     <p>The best AI model in the world is:</p>
-    <p id="model-name" contenteditable="true">GPT-5</p>
+    <p id="model-name" contenteditable="true">GPT-6 Astra</p>
     <p>by</p>
     <p id="company-name" contenteditable="true">OpenAI</p>
-    <p>The model is controlled by me I literally just type it in</p>
 
     <script>
       function updateDateTime() {
