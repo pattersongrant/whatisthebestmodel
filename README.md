@@ -1,2 +1,3 @@
 # whatisthebestmodel
-says the best ai model of today
+
+Plain HTML page that shows the current local date/time + timezone and lets you type in the current best model and company.
