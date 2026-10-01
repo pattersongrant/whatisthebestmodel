@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whatisthebestmodel</title>
+  </head>
+  <body>
+    <p>
+      It is currently <span id="current-datetime"></span>
+      <span id="current-timezone"></span>
+    </p>
+
+    <p>The best AI model in the world is:</p>
+    <p id="model-name" contenteditable="true">GPT-5</p>
+    <p>by</p>
+    <p id="company-name" contenteditable="true">OpenAI</p>
+    <p>The model is controlled by me I literally just type it in</p>
+
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        document.getElementById("current-datetime").textContent =
+          now.toLocaleString();
+        document.getElementById("current-timezone").textContent = timezone;
+      }
+
+      updateDateTime();
+      setInterval(updateDateTime, 1000);
+    </script>
+  </body>
+</html>
